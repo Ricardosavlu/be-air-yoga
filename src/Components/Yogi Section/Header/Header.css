@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+}
+.Logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 5rem;
+}
+
+.Logo > img {
+  width: 5rem;
+  height: 2rem;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: var(--gold-color);
+}
+
+.header-menu > li {
+  height: 1.4rem;
+}
+
+.header-menu > li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.login :nth-child(1) {
+  display: flex;
+  gap: 2rem;
+  color: var(--gold-color);
+  height: 1.4rem;
+}
+
+.login :nth-child(1):hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    background: var(--sunset);
+  }
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .header-menu {
+    flex-direction: column;
+    background: var(--sunset);
+    padding: 2rem;
+  }
+}

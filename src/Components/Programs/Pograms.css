@@ -1,0 +1,113 @@
+.programs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 2rem;
+}
+
+.programs-header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.program-categories {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  background: var(--sunset);
+  padding: 5rem 1rem 0 1rem;
+  gap: 1rem;
+  flex: 1;
+  height: 25rem;
+  color: var(--gold-color);
+  border-radius: 2rem;
+}
+
+.category > :nth-child(1) {
+  width: 6rem;
+  height: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+.category > :nth-child(2) {
+  font-size: 1.7rem;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--purple);
+  font-family: 'inter', Arial, Helvetica, sans-serif;
+}
+
+.category > :nth-child(3) {
+  font-size: 1.2rem;
+  line-height: 25px;
+  text-align: start;
+  color: var(--black);
+  font-family: 'inter', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.category:hover {
+  background: var(--blueBackground);
+  cursor: pointer;
+  color: var(--darkBlue);
+}
+
+.join-now {
+  display: flex;
+  gap: 2rem;
+  color: var(--darkblue);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+  .programs-container {
+    flex-direction: column;
+    background: white;
+    padding: 3rem;
+  }
+
+  .programs-header {
+    flex-direction: column;
+    font-size: xx-large;
+    text-align: center;
+    gap: 4rem;
+  }
+  .category {
+    padding: 2rem;
+  }
+  .description {
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .program-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .category > :nth-child(1) {
+    width: 4rem;
+  }
+  .category > :nth-child(2) {
+    font-size: medium;
+  }
+  .category > :nth-child(3) {
+    font-size: small;
+  }
+  .join-now {
+    font-size: small;
+  }
+}

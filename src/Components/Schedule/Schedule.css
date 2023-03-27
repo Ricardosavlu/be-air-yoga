@@ -1,0 +1,59 @@
+.scheduleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.scheduleTitle {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.scheduleTitle > :nth-child(1) {
+  font-size: 3.75rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--gold-color);
+}
+
+.scheduleTitle > :nth-child(2) {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 1rem;
+  color: #443f38;
+}
+
+.scheduleHours {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.teachers-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+  .scheduleContainer {
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+  }
+  .scheduleHours {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scheduleTitle {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teachers-container {
+    flex-direction: column;
+  }
+}
